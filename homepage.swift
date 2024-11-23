@@ -1,9 +1,4 @@
-//
-//  homepage.swift
-//  refuel
-//
-//  Created by Dinesh Duvva on 23/11/24.
-//
+
 import SwiftUI
 
 struct HomePageView: View {
@@ -40,7 +35,7 @@ struct HomePageView: View {
                 }
                 .padding()
                 
-                // Greeting and Select Product Section
+                
                 VStack(alignment: .leading, spacing: 20) {
                     Text("Hello, Bhavana")
                         .font(.headline)
@@ -60,7 +55,7 @@ struct HomePageView: View {
                 
                 Spacer()
                 
-                // Bottom Navigation Bar
+               
                 Text("Refuel Toll free:1100010098")
                     .font(.headline)
                 HStack {
@@ -90,7 +85,7 @@ struct FuelProductView: View {
             Text(name)
                 .font(.subheadline)
             
-            // Use NavigationLink to navigate to ProductSelectionView
+            
             NavigationLink(destination: ProductSelectionView(productType: name)) {
                 Text("+ Buy")
                     .font(.caption)
