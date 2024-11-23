@@ -1,9 +1,3 @@
-//
-//  locationInputView.swift
-//  refuel
-//
-//  Created by Dinesh Duvva on 23/11/24.
-//
 import SwiftUI
 
 struct LocationView: View {
