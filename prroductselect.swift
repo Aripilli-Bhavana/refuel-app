@@ -165,7 +165,7 @@ struct PaymentView: View {
     var totalPrice: Int
 
     @State private var selectedPaymentMethod = "COD"
-    @State private var selectedCardType = "Visa" // Default for card payment
+    @State private var selectedCardType = "Visa" 
     @State private var upiID = ""
 
     var body: some View {
@@ -178,7 +178,7 @@ struct PaymentView: View {
                 .font(.title2)
                 .foregroundColor(.green)
 
-            // Payment Method Picker
+       
             Picker("Select Payment Method", selection: $selectedPaymentMethod) {
                 Text("Cash on Delivery").tag("COD")
                 Text("Card Payment").tag("Card")
@@ -187,7 +187,7 @@ struct PaymentView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
 
-            // Card Payment Section
+           
             if selectedPaymentMethod == "Card" {
                 VStack(spacing: 10) {
                     Text("Select Card Type")
@@ -224,7 +224,7 @@ struct PaymentView: View {
                 .cornerRadius(10)
             }
 
-            // UPI Payment Section
+          
             if selectedPaymentMethod == "UPI" {
                 VStack(spacing: 10) {
                     Text("Enter UPI ID")
@@ -240,7 +240,7 @@ struct PaymentView: View {
                 .cornerRadius(10)
             }
 
-            // Confirm Payment Button
+         
             NavigationLink(
                 destination: OrderConfirmationView(),
                 label: {
