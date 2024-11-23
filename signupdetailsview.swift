@@ -1,9 +1,4 @@
-//
-//  signupdetailsview.swift
-//  refuel
-//
-//  Created by Dinesh Duvva on 23/11/24.
-//
+
 import SwiftUI
 
 struct SignupDetailsView: View {
@@ -13,7 +8,7 @@ struct SignupDetailsView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Image("re3") // Replace with your app logo asset name
+            Image("re3") 
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150, height: 150)
@@ -38,7 +33,6 @@ struct SignupDetailsView: View {
                 .cornerRadius(8)
             
             Button(action: {
-                // Perform signup action
                 print("User signed up with name: \(name), email: \(email)")
             }) {
                 Text("Sign Up")
