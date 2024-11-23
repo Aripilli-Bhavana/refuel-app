@@ -1,9 +1,4 @@
-//
-//  prroductselect.swift
-//  refuel
-//
-//  Created by Dinesh Duvva on 23/11/24.
-//
+
 import SwiftUI
 
 
@@ -12,12 +7,12 @@ struct ProductSelectionView: View {
 
     @State private var quantities: [String: Int] = ["IndianOil": 1, "Bharat Petroleum": 1, "HP": 1]
 
-    // Dictionary for prices based on product type
+    
     let prices: [String: Int] = ["Diesel": 98, "Petrol": 110, "Power Petrol": 115]
 
     var body: some View {
         VStack {
-            // Header
+          
             Text(productType)
                 .font(.largeTitle)
                 .bold()
@@ -28,7 +23,7 @@ struct ProductSelectionView: View {
                 .foregroundColor(.gray)
                 .padding(.bottom)
 
-            // Grid Layout
+           
             LazyVGrid(columns: [GridItem(), GridItem()], spacing: 20) {
                 ForEach(["IndianOil", "Bharat Petroleum", "HP"], id: \.self) { vendor in
                     VendorView(
