@@ -11,8 +11,8 @@ import SwiftUI
 struct RefuelApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {  // Make sure the root view is wrapped in NavigationView
-                StartPageView() // This is your entry view
+            NavigationView {  
+                StartPageView() 
             }
         }
     }
